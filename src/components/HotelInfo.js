@@ -1,5 +1,5 @@
 import React from "react";
-import amenitiesData from "./data/amenities.json";
+import accessibilityData from "./data/accessibilities.json";
 import servicesData from "./data/services.json";
 
 const HotelInfo = () => {
@@ -58,8 +58,8 @@ const HotelInfo = () => {
             needs:
           </p>
           <ul>
-            {amenitiesData.map((amenities) => (
-              <li>{amenities.name}</li>
+            {accessibilityData.map((accessibility) => (
+              <li>{accessibility.name}</li>
             ))}
           </ul>
         </section>
