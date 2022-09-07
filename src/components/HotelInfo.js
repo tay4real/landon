@@ -46,7 +46,7 @@ const HotelInfo = () => {
           </p>
           <ul>
             {servicesData.map((services) => (
-              <li>{services.name}</li>
+              <li key={services.name}>{services.name}</li>
             ))}
           </ul>
         </section>
@@ -59,7 +59,7 @@ const HotelInfo = () => {
           </p>
           <ul>
             {accessibilityData.map((accessibility) => (
-              <li>{accessibility.name}</li>
+              <li key={accessibility.name}>{accessibility.name}</li>
             ))}
           </ul>
         </section>
